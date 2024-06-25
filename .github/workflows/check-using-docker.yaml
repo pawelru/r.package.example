@@ -20,8 +20,8 @@
         name: R CMD Check 🧬 - Inside container 🐳
         runs-on: ubuntu-latest
         container:
-          image: "ghcr.io/user-workshop-cicd/r-pkg-example:4.3"
-        if: false
+          image: "ghcr.io/pawelru/r-pkg-example:4.3"
+        if: true
 
         steps:
           # Note : We can not use reusable workflow when the job runs on a container. Only Github Actions can be used.
